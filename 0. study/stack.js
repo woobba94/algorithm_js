@@ -1,3 +1,4 @@
+// 1. 스택과 큐
 class Stack {
   constructor() {
     this.arr = [];
@@ -8,8 +9,6 @@ class Stack {
   }
 
   pop(index = this.arr.length - 1) {
-    // index가 입력이 안되었을 때
-    // index가 입력이 되었을 때
     if (index === this.arr.length - 1) {
       return this.arr.pop();
     }
@@ -21,7 +20,7 @@ class Stack {
   }
 
   empty() {
-    if (arr.length == 0) {
+    if (this.arr.length == 0) {
       return true;
     } else {
       return false;
